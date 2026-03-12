@@ -1,0 +1,9 @@
+<h2>🛒 Giỏ hàng của bạn</h2>
+
+{% for item in items %}
+<p>
+{{ item.product.name }} 
+- {{ item.quantity }} 
+- {{ item.product.price }} VND
+</p>
+{% endfor %}
